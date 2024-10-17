@@ -29,6 +29,9 @@ return {
             if vim.fn.argc(-1) == 0 then
               -- try to load a directory session using the current working directory
               require("resession").load(vim.fn.getcwd(), { dir = "dirsession", silence_errors = true })
+
+              local current = require("resession").get_current()
+              if current == nil then require("alpha").start() end
             end
           end,
         },
