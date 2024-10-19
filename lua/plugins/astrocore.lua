@@ -65,6 +65,18 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        ["<C-_>"] = {
+          "gcc",
+          remap = true,
+          desc = "Toggle comment",
+        },
+      },
+      i = {
+        ["<C-_>"] = {
+          "<Esc>gcc",
+          remap = true,
+          desc = "Toggle comment",
+        },
       },
     },
   },
