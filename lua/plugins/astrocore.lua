@@ -78,6 +78,13 @@ return {
           desc = "Toggle comment",
         },
       },
+      v = {
+        ["<C-_>"] = {
+          "gb",
+          remap = true,
+          desc = "Toggle comment block",
+        },
+      },
     },
   },
 }
