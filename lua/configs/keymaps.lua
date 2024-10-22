@@ -1,4 +1,4 @@
-return {
+local mapping = {
   -- first key is the mode
   n = {
     -- second key is the lefthand side of the map
@@ -26,12 +26,6 @@ return {
       remap = true,
       desc = "Toggle comment",
     },
-
-    -- telescope keymap
-    ["<leader>fg"] = {
-      function() require("telescope").extensions.live_grep_args.live_grep_args() end,
-      desc = "Find words with args",
-    },
   },
   i = {
     ["<C-_>"] = {
@@ -48,3 +42,13 @@ return {
     },
   },
 }
+
+if vim.fn.executable "rg" == 1 then
+  -- telescope keymap
+  mapping.n["<leader>fg"] = {
+    function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+    desc = "Find words with args",
+  }
+end
+
+return mapping
