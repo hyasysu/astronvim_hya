@@ -26,6 +26,11 @@ local mapping = {
       remap = true,
       desc = "Toggle comment",
     },
+    ["<F4>"] = {
+      "<leader>lS",
+      remap = true,
+      desc = "Search Symbols",
+    },
   },
   i = {
     ["<C-_>"] = {
