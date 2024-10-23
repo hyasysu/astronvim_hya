@@ -9,7 +9,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.solarized-osaka-nvim" },
   { import = "astrocommunity.pack.cpp" },
-  -- { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   -- import/override with your plugins folder
 }
