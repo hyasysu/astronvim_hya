@@ -5,8 +5,10 @@ return {
     local WorkDir = {
       init = function(self)
         self.icon = " "
-        local cwd = vim.fn.getcwd(0)
-        self.cwd = vim.fn.fnamemodify(cwd, ":~")
+        -- local cwd = vim.fn.getcwd(0)
+        -- self.cwd = vim.fn.fnamemodify(cwd, ":~")
+        local current_file_path = vim.fn.expand "%:p"
+        self.cwd = vim.fn.fnamemodify(current_file_path, ":~")
       end,
       hl = { fg = "white", bold = true },
 
