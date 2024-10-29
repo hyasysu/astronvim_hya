@@ -16,6 +16,17 @@ return {
       end,
     },
   },
-  opts = {},
-  event = "VeryLazy", -- Optional: needed only if you want to type `:VenvSelect` without a keymapping
+  config = function()
+    require("venv-selector").setup {
+      settings = {
+        options = {
+          cached_venv_automatic_activation = false, -- enable VenvSelectCached
+        },
+      },
+    }
+  end,
+  cmd = {
+    "VenvSelect",
+    "VenvSelectCached",
+  },
 }
