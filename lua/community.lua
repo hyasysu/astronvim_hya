@@ -12,5 +12,6 @@ return {
   { import = "astrocommunity.pack.cpp" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
   -- import/override with your plugins folder
 }
