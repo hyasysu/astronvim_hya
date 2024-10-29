@@ -13,5 +13,6 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- import/override with your plugins folder
 }
