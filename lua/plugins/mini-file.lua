@@ -27,5 +27,9 @@ return {
       opts = { integrations = { mini = true } },
     },
   },
-  opts = {},
+  opts = {
+    windows = {
+      preview = true,
+    },
+  },
 }
