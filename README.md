@@ -32,3 +32,12 @@ git clone https://github.com/hyasysu/astronvim_hya.git ~/.config/nvim
 ```shell
 nvim
 ```
+
+#### PS
+When you want to add markdownpreview-nvim, you should install `yarn`.
+```
+npm install -g yarn
+
+cd ~/.local/share/nvim/lazy/markdown-preview.nvim/app
+yarn install
+```
