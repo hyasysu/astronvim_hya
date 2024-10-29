@@ -4,18 +4,17 @@ return {
     "nvim-tree/nvim-web-devicons",
     {
       "AstroNvim/astrocore",
-      opts = {
-        mappings = {
-          n = {
-            ["<Leader><Leader>e"] = {
-              function()
-                if not require("mini.files").close() then require("mini.files").open() end
-              end,
-              desc = "Explorer",
-            },
-          },
-        },
-      },
+      opts = function(_, opts)
+        local maps = opts.mappings
+        local prefix = "<Leader><Leader>"
+        maps.n[prefix] = { desc = require("astroui").get_icon("FolderOpen", 1, true) .. "Mini File" }
+        maps.n[prefix .. "e"] = {
+          function()
+            if not require("mini.files").close() then require("mini.files").open() end
+          end,
+          desc = "Mini File Explorer",
+        }
+      end,
     },
   },
   specs = {
