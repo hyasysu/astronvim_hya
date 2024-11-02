@@ -27,6 +27,16 @@ You can also just clone this repository directly if you do not want to track you
 git clone https://github.com/hyasysu/astronvim_hya.git ~/.config/nvim
 ```
 
+#### Clone the repository by ssh
+```shell
+git clone git@github.com:hyasysu/astronvim_hya.git ~/.config/nvim
+```
+
+#### Windows
+```shell
+git clone git@github.com:hyasysu/astronvim_hya.git $env:LOCALAPPDATA\nvim
+```
+
 #### Start Neovim
 
 ```shell
