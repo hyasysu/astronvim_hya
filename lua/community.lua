@@ -15,6 +15,7 @@ return {
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.dracula-nvim" },
   { import = "astrocommunity.pack.cpp" },
+  { import = "astrocommunity.pack.cmake" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.completion.cmp-cmdline" },
   { import = "astrocommunity.editing-support.multicursors-nvim" },
