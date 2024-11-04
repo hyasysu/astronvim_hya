@@ -31,6 +31,10 @@ local mapping = {
       remap = true,
       desc = "Search Symbols",
     },
+    ["<A-o>"] = {
+      "<Cmd>ClangdSwitchSourceHeader<CR>",
+      desc = "Switch source/header file",
+    },
   },
   i = {
     ["<C-_>"] = {
