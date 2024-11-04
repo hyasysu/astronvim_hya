@@ -10,7 +10,7 @@ return {
         local current_file_path = vim.fn.expand "%:p"
         self.cwd = vim.fn.fnamemodify(current_file_path, ":~")
       end,
-      hl = { fg = "white", bold = true },
+      hl = { fg = "#DBBC7F", bold = true },
 
       flexible = 1,
 
