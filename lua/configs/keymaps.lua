@@ -35,6 +35,11 @@ local mapping = {
       "<Cmd>ClangdSwitchSourceHeader<CR>",
       desc = "Switch source/header file",
     },
+    ["<F12>"] = {
+      "gd",
+      remap = true,
+      desc = "Show the definition of current symbol",
+    },
   },
   i = {
     ["<C-_>"] = {
