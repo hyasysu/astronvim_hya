@@ -43,6 +43,16 @@ local mapping = {
     ["<C-p>"] = {
       'viw"_dP',
     },
+    ["<F2>"] = {
+      "<leader>lr",
+      remap = true,
+      desc = "Rename current symbol",
+    },
+    ["<C-LeftMouse>"] = {
+      "gd",
+      remap = true,
+      desc = "Same to gd",
+    },
   },
   i = {
     ["<C-_>"] = {
