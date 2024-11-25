@@ -40,6 +40,9 @@ local mapping = {
       remap = true,
       desc = "Show the definition of current symbol",
     },
+    ["<C-p>"] = {
+      'viw"_dP',
+    },
   },
   i = {
     ["<C-_>"] = {
@@ -53,6 +56,9 @@ local mapping = {
       "gb",
       remap = true,
       desc = "Toggle comment block",
+    },
+    ["<C-p>"] = {
+      '"_dP',
     },
   },
 }
