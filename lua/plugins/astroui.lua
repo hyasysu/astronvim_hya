@@ -22,6 +22,9 @@ return {
     end,
   },
   {
+    "nvimdev/zephyr-nvim",
+  },
+  {
     "sainnhe/edge",
     lazy = false,
     priority = 1000,
@@ -39,7 +42,8 @@ return {
       -- colorscheme = "astrodark",
       -- colorscheme = "catppuccin",
       -- colorscheme = "everforest",
-      colorscheme = "gruvbox-material",
+      colorscheme = "zephyr",
+      -- colorscheme = "gruvbox-material",
       -- colorscheme = "edge",
       -- colorscheme = "dracula",
       -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
