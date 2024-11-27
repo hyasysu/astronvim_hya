@@ -36,6 +36,7 @@ return {
         selection_caret = get_icon("Selected", 1),
         multi_icon = get_icon("Selected", 1),
         path_display = { "truncate" },
+        dynamic_preview_title = true,
         sorting_strategy = "ascending",
         layout_config = {
           horizontal = { prompt_position = "top", preview_width = 0.55 },
