@@ -22,7 +22,7 @@ return {
     end,
   },
   {
-    "nvimdev/zephyr-nvim",
+    "hyasysu/zephyr-nvim",
   },
   {
     "sainnhe/edge",
