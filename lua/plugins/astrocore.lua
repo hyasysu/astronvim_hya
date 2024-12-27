@@ -41,5 +41,20 @@ return {
     -- Mappings can be configured through AstroCore as well.
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = require "configs.keymaps",
+    on_keys = {
+      auto_hlsearch = {
+        function(char)
+          if vim.fn.mode() == "n" then
+            local new_hlsearch = vim.tbl_contains({ "<CR>", "n", "N", "*", "#", "?", "/" }, vim.fn.keytrans(char))
+            local escape_hlsearch = vim.tbl_contains({ "<Esc>" }, vim.fn.keytrans(char))
+            if escape_hlsearch then
+              vim.opt.hlsearch = false
+            elseif new_hlsearch then
+              vim.opt.hlsearch = new_hlsearch
+            end
+          end
+        end,
+      },
+    },
   },
 }
