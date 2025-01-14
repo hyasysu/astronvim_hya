@@ -53,6 +53,9 @@ local mapping = {
       remap = true,
       desc = "Same to gd",
     },
+    ["<C-f>"] = {
+      "*#",
+    },
   },
   i = {
     ["<C-_>"] = {
