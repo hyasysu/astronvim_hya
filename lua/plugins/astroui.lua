@@ -35,7 +35,7 @@ return {
     end,
   },
   {
-    "askfiy/visual_studio_code",
+    "hyasysu/visual_studio_code",
     priority = 100,
   },
   {
