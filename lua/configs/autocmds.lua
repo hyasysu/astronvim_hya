@@ -31,6 +31,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
     local filetypes = { "OverseerList", "neo-tree", "toggleterm" }
     local buftypes = { "nofile", "terminal" }
     if vim.tbl_contains(buftypes, vim.bo.buftype) and vim.tbl_contains(filetypes, vim.bo.filetype) then
+      vim.notify("setwinfixbuf", vim.log.levels.INFO)
       vim.cmd "set winfixbuf"
     end
   end,
