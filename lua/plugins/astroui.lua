@@ -35,6 +35,10 @@ return {
     end,
   },
   {
+    "askfiy/visual_studio_code",
+    priority = 100,
+  },
+  {
     "AstroNvim/astroui",
     ---@type AstroUIOpts
     opts = {
@@ -42,7 +46,8 @@ return {
       -- colorscheme = "astrodark",
       -- colorscheme = "catppuccin",
       -- colorscheme = "everforest",
-      colorscheme = "zephyr",
+      -- colorscheme = "zephyr",
+      colorscheme = "visual_studio_code",
       -- colorscheme = "gruvbox-material",
       -- colorscheme = "edge",
       -- colorscheme = "dracula",
