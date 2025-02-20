@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd("TermOpen", {
 
 -- set winfixbuf to especial windows
 vim.api.nvim_create_augroup("IrreplaceableWindows", { clear = true })
-vim.api.nvim_create_autocmd("TermOpen", {
+vim.api.nvim_create_autocmd("TermEnter", {
   group = "IrreplaceableWindows",
   pattern = "*",
   callback = function()
