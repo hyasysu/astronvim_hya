@@ -25,6 +25,9 @@ return {
     "hyasysu/zephyr-nvim",
   },
   {
+    "hyasysu/vscode.nvim",
+  },
+  {
     "sainnhe/edge",
     lazy = false,
     priority = 1000,
@@ -59,7 +62,8 @@ return {
       -- colorscheme = "catppuccin",
       -- colorscheme = "everforest",
       -- colorscheme = "zephyr",
-      colorscheme = "visual_studio_code",
+      -- colorscheme = "visual_studio_code",
+      colorscheme = "vscode",
       -- colorscheme = "gruvbox-material",
       -- colorscheme = "edge",
       -- colorscheme = "dracula",
